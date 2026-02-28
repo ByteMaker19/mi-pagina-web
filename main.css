@@ -1,0 +1,302 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;       /* Para que el body ocupe toda la altura de la ventana */
+  margin: 0;
+}
+
+body{
+   font-family: "Lato", sans-serif;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Cabecera */
+#cabecera {
+  height: 90px;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Logo centrado */
+.nombre {
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img{
+  height: 90px;          /* Ajusta según tu cabecera */
+  width: auto;
+  display: block;
+  border-top: 30px;
+
+}
+
+.telefono img{
+  height: 50px;
+  cursor: pointer;
+}
+/* Menú inicialmente oculto */
+.menu {
+  display: none;
+  background-color: white;
+  margin-top: 0;
+}
+
+/* Menú visible cuando tiene la clase 'open' */
+.menu.open {
+  display: block;
+}
+
+/* Estilos de los enlaces */
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+#contenido{
+  flex: 1;
+}
+
+#contenido section {
+  display: none;   /* Todas ocultas por defecto */
+}
+
+#contenido section.activo {
+  display: block;  /* Solo la sección con clase 'activo' se ve */
+}
+
+.tarjeta {
+  background-color: #ffffff;               /* Fondo blanco puro */
+  padding: 1.5rem;                         /* Espacio interno */
+  border-radius: 10px;                     /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra ligera */
+  max-width: 100%;                        /* Ancho máximo */
+  margin: 1rem auto;                       /* Centrado horizontal y separación vertical */
+}
+
+.tarjeta h3{
+  text-align: center;
+}
+
+#footer {
+  background-color: skyblue;      /* fondo oscuro */
+  color: #fff;                     /* texto claro */
+  text-align: center;              /* todo centrado */
+  padding: 2rem 1rem;              /* espacio interno */
+  font-size: 0.9rem;               /* tamaño cómodo */
+}
+
+#footer .footer-logo img {
+  height: 50px;                    /* tamaño del logo */
+  margin-bottom: 1rem;
+}
+
+.contacto-tarjeta {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contacto-tarjeta h3 {
+  margin-bottom: 1rem;
+}
+
+.contacto-tarjeta .info-contacto p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.contacto-tarjeta a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.contacto-tarjeta a:hover {
+  text-decoration: underline;
+}
+
+/* Formulario */
+.contacto-tarjeta form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.contacto-tarjeta input,
+.contacto-tarjeta textarea {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contacto-tarjeta button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacto-tarjeta button:hover {
+  background-color: deepskyblue;
+}
+
+#mensaje-exito {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Agranda un poco */
+  background-color: deepskyblue; /* Cambia color */
+}
+
+
+#irContactos{
+  transition: all 0.3s ease;
+  background-color: none;
+  border-radius: 8px;
+  height:30px;
+  width: 150px;
+  border-color: deepskyblue;
+}
+
+
+.redes {
+  display: flex;          /* activa flexbox */
+  gap: 1rem;              /* espacio entre los botones */
+  justify-content: center; /* opcional: centra horizontalmente */
+  align-items: center;    /* centra verticalmente los contenidos dentro de los botones */
+}
+
+.redes button {
+  background: none;       /* opcional: quita fondo si quieres solo la imagen */
+  border: none;           /* quita borde */
+  cursor: pointer;        /* efecto puntero */
+}
+
+.redes img {
+  height: 40px;           /* ajusta tamaño de la imagen */
+  width: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem 0;
+}
+
+.faq-item h3 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Flecha */
+.flecha {
+  transition: transform 0.3s ease;
+}
+
+/* Respuesta oculta */
+.faq-item p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Cuando está activo */
+.faq-item.activo p {
+  max-height: 200px; /* suficiente para el texto */
+  opacity: 1;
+}
+
+/* Flecha gira hacia abajo */
+.faq-item.activo .flecha {
+  transform: rotate(90deg);
+}
+
+.nombre {
+  text-align: center;
+}
+
+.nombre h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nombre .slogan {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.telefono button{
+  background: none;       
+  border: none;           
+  cursor: pointer;        
+}
+
+.tarini {
+  background-color: #cff;               /* Fondo blanco puro */
+  padding: 1.5rem;                         /* Espacio interno */
+  border-radius: 10px;                     /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra ligera */
+  max-width: 100%;                        /* Ancho máximo */
+  margin: 1rem auto;                       /* Centrado horizontal y separación vertical */
+}
+
+.tarini h3{
+  text-align: center;
+}
+
+.tarvid{
+  display: flex;
+}
+
+#irVideos{
+  text-align: center;
+  background: none;       /* opcional: quita fondo si quieres solo la imagen */
+  border: none;           /* quita borde */
+  cursor: pointer;        /* efecto puntero */
+  background-color: skyblue;
+  border-radius: 6px;
+}

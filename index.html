@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SKATELAB</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+   
+
+</head>
+<body>
+    <header id  ="cabecera">
+        <div class="menu-btn">
+            &#9776;
+        </div>
+
+        <div class="nombre">
+           <div class="logo">
+            <img src="images/logo2.png">
+            </div>
+            
+            
+        </div>
+
+        <div class="telefono">
+            <button class="telef" id="irContactos"><img src="images/telefono.png"></button>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="#" data-contenido = "inicio">Inicio</a>
+        <a href="#" data-contenido = "videos">Videotutoriales</a>
+        <a href="#" data-contenido = "FAQ">FAQ</a>
+        <a href="#" data-contenido = "quienes">¿Quienes somos?</a>
+        <a href="#" data-contenido = "contacto">Contacto</a>
+    </nav>
+
+    <div id="contenido">
+        <section id="inicio" class="activo">
+            
+            <div class="tarjeta">
+                <h3>Bienvenido a SKATELAB</h3> <br>
+                <p>Esta pagina forma parte de un proyecto conjunto del instituto CIPFP La torreta. Si quieres saber mas visita el apartado <a href="#quienes">¿Quienes somos?</a>, hay podras informarte sobre este proyecto y lo que ofrece esta pagina.</p>
+            </div>
+
+            <div class="tarini">
+                <h3>VIDEOTUTORIALES DESTACADOS</h3>
+                <div class="tarvid">
+                    <div class=" tarjeta">
+                        <h3>VIDEO 1</h3>
+                       En este video enseñamos todas las partes basicas que conforma un patinete.<br>
+                       <img id="imgvid1" src="x">
+                    </div>
+
+                    <div class=" tarjeta">
+                        <h3>VIDEO 2</h3>
+                       En este video enseñamos todas las partes basicas que conforma un patinete.<br>
+                       <img id="imgvid2" src="x">
+                    </div>
+
+                    <div class=" tarjeta">
+                       <h3>VIDEO 3</h3> <br>
+                       En este video enseñamos todas las partes basicas que conforma un patinete.<br>
+                       <img id="imgvid3" src="x">
+                    </div>
+                </div>
+
+                <button id="irVideos">VER TODOS</button>
+            </div>
+        
+        </section>
+        <section id="videos">Videotutoriales</section>
+        <section id="FAQ">
+            <div class="tarjeta faq">
+
+                <div class="faq-item">
+                    <h3>¿Cada cuánto tiempo se debe revisar un patinete?
+                         <span class="flecha">▶</span>
+                    </h3>
+                    <p>Se recomienda hacer una revisión básica cada 2 o 3 meses.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cuánto dura la batería?
+                         <span class="flecha">▶</span>
+                    </h3>
+                    <p>Normalmente entre 2 y 5 años, dependiendo del uso y el cuidado.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Es malo cargarlo toda la noche?
+                         <span class="flecha">▶</span>
+                    </h3>
+                    <p>No es recomendable. Lo ideal es desconectarlo cuando esté cargado.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo usarlo bajo la lluvia?
+                         <span class="flecha">▶</span>
+                    </h3>
+                    <p>No se recomienda, ya que el agua puede dañar los componentes eléctricos.</p>
+                </div>
+
+            </div>
+    </section>
+        
+        <section id="quienes">
+            <div class="tarjeta">
+                <h3>¿Quienes somos?</h3>
+                <p>Esta página web forma parte de un proyecto conjunto que se esta realizando en el instituto <a href="https://www.torreta.es">CIPFP La torreta</a> hecho por el grupo <b>2CFGB Electricidad y electronica</b>. <br>
+        	    Dicho proyecto forma parte de la asignatura <b>Proyecto Intermodular</b> la cual consiste en realizar un proyecto haciendo uso y aplicando lo que aprendemos en todos los modulos del grado.</p> 
+                <div id="torretalogo"><img src="images/torreta.png"></div>
+                <br> <br>
+                <h3> ¿En que consiste el proyecto?</h3>
+                <p>Este proyecto <b>consiste en crear una empresa</b> la cual se dedica principalmente al <b>arreglo de patines electricos</b>, pero para resaltar un poco mas por encima del resto, decidimos crear tambien una serie de <b>videotutoriales</b> en la que vosotros también podais aprender a realizar reparaciones basicas.</p>
+                <br> <br>
+                <h3 > ¿Que partes tiene el proyecto?</h3>
+                <p>El proyecto tiene dos partes principales, la grabación de los videotutoriales la cual incluye varios modulos, como telecomunicaciones, castellano, valenciano e ingles y la parte de la pagina web que se realiza en la asignatura de redes. También hay asignaturas como matematicas o IP(itinerario personal) en las cuales también aprendemos como funciona una empresa o como hacer facturas.</p>
+                <br><br>
+                <p>Para cualquier duda o sugerencia ir al siguiente apartado.</p> <br>
+                    <button id="irContactos">Ir a contactos</button>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <div class="contacto-tarjeta">
+                <h3>¿Necesitas contactar?</h3>
+                Puedes hacernos cualquier consulta o sugerencia desde los siguientes<br>
+                <div class="info-contacto">
+                    <p>📞 <a href="tel:123456789">123 456 789</a></p>
+                    <p>📧 <a href="mailto:contacto@skatelab.com">contacto@skatelab.com</a></p>
+                </div>
+
+                <hr>
+
+             <!-- Formulario de contacto -->
+                <form id="form-contacto">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="4" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+
+
+                <p id="mensaje-exito"></p>
+            </div>                
+            
+            <div class="tarjeta">
+                <h3>Redes Sociales del CIPFP La torreta</h3>
+                <div class="redes">
+                    <button id="youtube"><img src="images/youtube.png" alt="YouTube"></button>
+                    <button id="instagram"><img src="images/instagram.png" alt="Instagram"></button>
+            </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="images/torreta.png" alt="CIPFP La Torreta Logo">
+        </div>
+
+        <p>Proyecto educativo desarrollado por alumnos del CIPFP La Torreta</p>
+
+        <p>© 2026 SKATELAB – Todos los derechos reservados</p>
+    </footer>
+
+    <script src='main.js'></script>
+</body>
+</html>
